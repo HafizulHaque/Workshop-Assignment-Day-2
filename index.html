@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+    <meta name="description" content="A simple webpage for making book-list">
+    <meta name="author" content="Hafizul Haque">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- skeleton css  -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/skeleton.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <div class="container main">
+        <h3>Add Book</h3>
+        <form class="row">
+            <div class="one-half column">
+                <label for="title">Title</label>
+                <input type="text" id="title" class="u-full-width" placeholder="Enter Book Title">
+            </div>
+            <div class="one-half column">
+                <label for="author">Author</label>
+                <input type="text" id="author" class="u-full-width" placeholder="Enter Book Author">
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="button-primary u-full-width">
+            </div>
+        </form>
+        <h3>Book List</h3>
+        <hr>
+        <hr>
+        <div id="book-list" class="container">
+            <div class="row">
+                <div class="columns nine">
+                    "A Song Of Ice And Fire" by J.J. Martins 
+                </div>
+                <div class="columns three">
+                    <button class="u-full-width bookReadButton">Mark as Read</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="columns nine">
+                    "An Old Man And The Sea" by Ernest Hammingway
+                </div>
+                <div class="columns three">
+                    <button class="u-full-width bookReadButton">Mark as Read</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <button id="clearButton" class="button-primary u-full-width">Clear BookList</button>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
