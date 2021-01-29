@@ -56,8 +56,7 @@ function strikeThrough(button){
 }
 
 function capitalizeWords(str){
-  let words = str.split(' ')
-  let res = '';
+  let words = str.split(' ').filter(word=>word!='')
   for(let i = 0; i < words.length; ++i){
     words[i] = words[i][0].toUpperCase() + words[i].substr(1)
   }
